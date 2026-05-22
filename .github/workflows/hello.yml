@@ -2,13 +2,17 @@
 name: Hello
 
 # runs on a trigger
+#used for manual click deploy
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
+  
+  #used for automatic deploy
+# on:
+#   push:
+#     branches: [main]
 
 # these are jobs inside the workflow
 jobs:
-
   # this is the name of the job
   greet:
     # this is github runner, each job runs on a runner
