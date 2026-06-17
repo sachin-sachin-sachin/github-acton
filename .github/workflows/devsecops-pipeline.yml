@@ -39,5 +39,3 @@ jobs:
         needs: [trivy]
         uses: ./.github/workflows/deploy-to-server.yml
         secrets: inherit
-
-    
